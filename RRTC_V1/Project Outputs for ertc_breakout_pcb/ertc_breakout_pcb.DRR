@@ -1,0 +1,23 @@
+----------------------------------------------------------------------------------------------------------------------------------
+NCDrill File Report For: ertc_breakout_pcb.PcbDoc   11/7/2021  9:06:07 PM
+----------------------------------------------------------------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII RoundHoles File : ertc_breakout_pcb.TXT
+
+Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
+----------------------------------------------------------------------------------------------------------------------------------
+T1      0.711mm (28mil)                                           Round             22        PTH        795.68mm (31.33inch)
+T2      1mm (39mil)                                               Round             27        PTH        313.29mm (12.33inch)
+T3      1.04mm (41mil)                                            Round             140       PTH        558.80mm (22.00inch)
+T4      1.4mm (55mil)                                             Round             57        PTH        1043.88mm (41.10inch)
+T5      1.45mm (57mil)                                            Round             40        PTH        557.15mm (21.94inch)
+T6      1.85mm (73mil)                                            Round             6         PTH        22.30mm (0.88inch)
+T7      2mm (79mil)             -0.4mm (16mil)                    Round             2         PTH        5.00mm (0.20inch)
+T8      3.05mm (120mil)                                           Round             6         PTH        293.70mm (11.56inch)
+T9      6mm (236mil)                                              Round             4         PTH        472.44mm (18.60inch)
+T10     3mm (118mil)                                              Round             58        NPTH       1225.33mm (48.24inch)
+----------------------------------------------------------------------------------------------------------------------------------
+Totals                                                                              362
+
+Total Processing Time (hh:mm:ss) : 00:00:01

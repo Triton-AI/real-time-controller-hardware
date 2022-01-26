@@ -1,0 +1,72 @@
+Altium Designer Pick and Place Locations
+C:\Users\Ryan\Google Drive (rvtran@ucsd.edu)\ECE 191\go-kart-real-time-controller\PCB\ertc_breakout_pcb\Project Outputs for ertc_breakout_pcb\Pick Place for ertc_breakout_pcb.txt
+
+========================================================================================================================
+File Design Information:
+
+Date:       07/11/21
+Time:       21:07
+Revision:   aecbde97ecbdd2d11ec1ed1fca184c3125581f42
+Variant:    No variations
+Units used: mm
+
+Designator Comment          Layer    Footprint              Center-X(mm) Center-Y(mm) Rotation Description                                                                 
+R10        "1.2 kOhms"      TopLayer RES_0603_1608          24.1300      197.3580     90       "CRGCQ 0603 1K2 1%"                                                         
+D1         Green            TopLayer LED_0805_2012_GREEN    24.1300      202.1840     90       "LED GREEN CLEAR SMD"                                                       
+R9         =Value           TopLayer RES_0603_1608          131.4600     167.6400     0        "RES SMD 0 OHM JUMP 1/10W 0603"                                             
+J36        0039301049       TopLayer MOLEX_0039301049       130.3900     97.7900      90       "Connector Header Through Hole 4 position 0.165 _4.20mm_"                   
+J30        0039301049       TopLayer MOLEX_0039301049       130.3900     74.9300      90       "Connector Header Through Hole 4 position 0.165 _4.20mm_"                   
+J22        39-30-1039       TopLayer MOLEX_39-30-1039       149.8600     37.6800      180      "Connector Header Through Hole 3 position 0.165 _4.20mm_"                   
+J17        39-30-1039       TopLayer MOLEX_39-30-1039       149.8600     87.2100      180      "Connector Header Through Hole 3 position 0.165 _4.20mm_"                   
+J13        39-30-1039       TopLayer MOLEX_39-30-1039       149.8600     120.2300     180      "Connector Header Through Hole 3 position 0.165 _4.20mm_"                   
+J9         39-30-1039       TopLayer MOLEX_39-30-1039       149.8600     136.7400     180      "Connector Header Through Hole 3 position 0.165 _4.20mm_"                   
+C4         0.1µF            TopLayer CAP_0603_1608          91.4400      18.4150      270      "CAP CER 0.1UF 25V X7R 0603"                                                
+C2         0.1µF            TopLayer CAP_0603_1608          45.7200      18.4150      270      "CAP CER 0.1UF 25V X7R 0603"                                                
+U3         MAX3232IDR       TopLayer SOIC127P600X175-16N    62.2300      192.4050     90       "3-V to 5.5-V multichannel RS-232 line driver & receiver 16-SOIC -40 to 85" 
+U2         SN65HVD230DR     TopLayer SOIC127P599X175-8N     96.5200      18.4150      0        "3.3 V CAN Transceiver with Standby Mode 8-SOIC -40 to 85"                  
+U1         SN65HVD230DR     TopLayer SOIC127P599X175-8N     50.8000      18.4150      0        "3.3 V CAN Transceiver with Standby Mode 8-SOIC -40 to 85"                  
+R8         "60.4 Ohms"      TopLayer RES_0603_1608          102.2350     17.1450      180      "RES 60.4 OHM 1% 1/10W 0603"                                                
+R7         "1 kOhms"        TopLayer RES_0805_2012          96.5200      27.3050      0        "RES 1K OHM 1% 1/4W 0805"                                                   
+R6         "60.4 Ohms"      TopLayer RES_0603_1608          102.2350     19.6850      0        "RES 60.4 OHM 1% 1/10W 0603"                                                
+R5         "1 kOhms"        TopLayer RES_0805_2012          96.5200      24.7650      180      "RES 1K OHM 1% 1/4W 0805"                                                   
+R4         "60.4 Ohms"      TopLayer RES_0603_1608          56.5150      17.1450      180      "RES 60.4 OHM 1% 1/10W 0603"                                                
+R3         "1 kOhms"        TopLayer RES_0805_2012          50.8000      27.3050      0        "RES 1K OHM 1% 1/4W 0805"                                                   
+R2         "60.4 Ohms"      TopLayer RES_0603_1608          56.5150      19.6850      0        "RES 60.4 OHM 1% 1/10W 0603"                                                
+R1         "1 kOhms"        TopLayer RES_0805_2012          50.8000      24.7650      180      "RES 1K OHM 1% 1/4W 0805"                                                   
+J31        XT30UPB-M        TopLayer AMASS_XT30-M           31.7500      200.6600     270      "Plug; DC supply; XT60; male; PIN: 2; for cable; soldered; 30A; 500V"       
+J23        39-30-1039       TopLayer MOLEX_39-30-1039       10.1600      30.9000      0        "Connector Header Through Hole 3 position 0.165 _4.20mm_"                   
+J20        39-30-1039       TopLayer MOLEX_39-30-1039       10.1600      48.6800      0        "Connector Header Through Hole 3 position 0.165 _4.20mm_"                   
+J19        39-30-1039       TopLayer MOLEX_39-30-1039       10.1600      84.2400      0        "Connector Header Through Hole 3 position 0.165 _4.20mm_"                   
+J15        39-30-1039       TopLayer MOLEX_39-30-1039       10.1600      173.1400     0        "Connector Header Through Hole 3 position 0.165 _4.20mm_"                   
+J11        39-30-1039       TopLayer MOLEX_39-30-1039       10.1600      119.8000     0        "Connector Header Through Hole 3 position 0.165 _4.20mm_"                   
+J7         A-DF_09_A/KG-T2S TopLayer ASSMANN_A-DF09A/KG-T2S 62.8650      203.2000     180      "9 Position D-Sub Receptacle, Female Sockets Connector"                     
+J6         39-30-1039       TopLayer MOLEX_39-30-1039       10.1600      102.0200     0        "Connector Header Through Hole 3 position 0.165 _4.20mm_"                   
+J4         A-DF_09_A/KG-T2S TopLayer ASSMANN_A-DF09A/KG-T2S 102.8700     9.7560       0        "9 Position D-Sub Receptacle, Female Sockets Connector"                     
+C9         0.1µF            TopLayer CAP_0603_1608          62.2700      187.3250     180      "CAP CER 0.1UF 25V X7R 0603"                                                
+C8         0.1µF            TopLayer CAP_0603_1608          65.4050      187.3250     180      "CAP CER 0.1UF 25V X7R 0603"                                                
+C7         0.1µF            TopLayer CAP_0603_1608          55.8800      192.4050     270      "CAP CER 0.1UF 25V X7R 0603"                                                
+C6         0.1µF            TopLayer CAP_0603_1608          59.0550      187.3250     180      "CAP CER 0.1UF 25V X7R 0603"                                                
+C5         0.1µF            TopLayer CAP_0603_1608          58.4200      197.4850     180      "CAP CER 0.1UF 25V X7R 0603"                                                
+C3         4700pF           TopLayer CAP_0603_1608          106.0450     18.4150      0        "CAP CER 4700PF 50V X7R 0603"                                               
+C1         4700pF           TopLayer CAP_0603_1608          60.2850      18.4150      0        "CAP CER 4700PF 50V X7R 0603"                                               
+J14        39-30-1039       TopLayer MOLEX_39-30-1039       149.8600     103.7200     180      "Connector Header Through Hole 3 position 0.165 _4.20mm_"                   
+J24        39-30-1039       TopLayer MOLEX_39-30-1039       91.8600      201.9300     270      "Connector Header Through Hole 3 position 0.165 _4.20mm_"                   
+J10        0039281063       TopLayer MOLEX_0039281063       149.8600     170.3900     180      "Connector Header Through Hole, 6 position 0.165 (4.20mm)"                  
+J5         39-30-1039       TopLayer MOLEX_39-30-1039       10.1600      137.5800     0        "Connector Header Through Hole 3 position 0.165 _4.20mm_"                   
+J29        0039301049       TopLayer MOLEX_0039301049       130.3900     143.5100     90       "Connector Header Through Hole 4 position 0.165 _4.20mm_"                   
+J28        0039301049       TopLayer MOLEX_0039301049       30.9000      151.1300     270      "Connector Header Through Hole 4 position 0.165 _4.20mm_"                   
+J21        39-30-1039       TopLayer MOLEX_39-30-1039       149.8600     54.1900      180      "Connector Header Through Hole 3 position 0.165 _4.20mm_"                   
+J27        0039301049       TopLayer MOLEX_0039301049       30.9000      107.1200     270      "Connector Header Through Hole 4 position 0.165 _4.20mm_"                   
+J35        0039301049       TopLayer MOLEX_0039301049       130.3900     120.6500     90       "Connector Header Through Hole 4 position 0.165 _4.20mm_"                   
+J18        39-30-1039       TopLayer MOLEX_39-30-1039       149.8600     70.7000      180      "Connector Header Through Hole 3 position 0.165 _4.20mm_"                   
+J3         A-DF_09_A/KG-T2S TopLayer ASSMANN_A-DF09A/KG-T2S 56.6900      10.0100      0        "9 Position D-Sub Receptacle, Female Sockets Connector"                     
+J25        39-30-1039       TopLayer MOLEX_39-30-1039       109.6400     201.9300     270      "Connector Header Through Hole 3 position 0.165 _4.20mm_"                   
+J26        0039301049       TopLayer MOLEX_0039301049       34.3400      42.3300      0        "Connector Header Through Hole 4 position 0.165 _4.20mm_"                   
+J16        39-30-1039       TopLayer MOLEX_39-30-1039       10.1600      155.3600     0        "Connector Header Through Hole 3 position 0.165 _4.20mm_"                   
+J8         39-30-1039       TopLayer MOLEX_39-30-1039       149.8600     153.2500     180      "Connector Header Through Hole 3 position 0.165 _4.20mm_"                   
+J33        0039301049       TopLayer MOLEX_0039301049       30.9000      129.5400     270      "Connector Header Through Hole 4 position 0.165 _4.20mm_"                   
+J32        0039301049       TopLayer MOLEX_0039301049       30.9000      85.0900      270      "Connector Header Through Hole 4 position 0.165 _4.20mm_"                   
+J2         SSW-135-01-T-D   TopLayer SAMTEC_SSW-135-01-T-D  111.7600     107.9500     90       ""                                                                          
+J1         SSW-135-01-T-D   TopLayer SAMTEC_SSW-135-01-T-D  50.8000      107.9500     90       ""                                                                          
+J12        39-30-1039       TopLayer MOLEX_39-30-1039       10.1600      66.4600      0        "Connector Header Through Hole 3 position 0.165 _4.20mm_"                   
+J34        0039301049       TopLayer MOLEX_0039301049       30.9000      62.2300      270      "Connector Header Through Hole 4 position 0.165 _4.20mm_"                   

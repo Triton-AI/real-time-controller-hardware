@@ -1,0 +1,80 @@
+Altium Designer Pick and Place Locations
+C:\Users\Ryan\Google Drive (rvtran@ucsd.edu)\ECE 191\go-kart-real-time-controller\PCB\ertc_breakout_pcb_v1-1\Project Outputs for ertc_breakout_pcb\Pick Place for ertc_breakout_pcb.txt
+
+========================================================================================================================
+File Design Information:
+
+Date:       08/12/21
+Time:       13:11
+Revision:   Not in VersionControl
+Variant:    No variations
+Units used: mm
+
+Designator Layer    Center-X(mm) Center-Y(mm) Rotation 
+J10        TopLayer 149.8600     167.8500     180      
+R18        TopLayer 35.5600      180.3400     270      
+R17        TopLayer 33.0200      180.3400     270      
+R16        TopLayer 30.4800      180.3400     270      
+R15        TopLayer 120.6500     180.3400     270      
+R14        TopLayer 132.0800     180.3400     270      
+R13        TopLayer 123.1900     180.3400     270      
+R12        TopLayer 134.6200     180.3400     270      
+R11        TopLayer 125.7300     180.3400     270      
+J2         TopLayer 110.4900     90.1700      90       
+J1         TopLayer 49.5300      90.1700      90       
+U3         TopLayer 119.8100     20.8280      270      
+R10        TopLayer 101.6000     182.8800     0        
+D1         TopLayer 105.4100     182.8800     0        
+R9         TopLayer 137.1600     180.3400     270      
+J36        TopLayer 127.8500     107.9500     90       
+J30        TopLayer 127.8500     85.0900      90       
+J22        TopLayer 149.8600     134.8300     180      
+J17        TopLayer 149.8600     51.6500      180      
+J13        TopLayer 149.8600     84.6700      180      
+J9         TopLayer 149.8600     101.1800     180      
+C4         TopLayer 68.3750      18.8190      270      
+C2         TopLayer 29.2100      18.4150      270      
+U2         TopLayer 73.4550      18.8190      0        
+U1         TopLayer 34.2900      18.4150      0        
+R8         TopLayer 79.1700      17.5490      180      
+R7         TopLayer 73.4550      27.7090      0        
+R6         TopLayer 79.1700      20.0890      0        
+R5         TopLayer 73.4550      25.1690      180      
+R4         TopLayer 40.0050      17.1450      180      
+R3         TopLayer 34.2900      27.3050      0        
+R2         TopLayer 40.0050      19.6850      0        
+R1         TopLayer 34.2900      24.7650      180      
+J31        TopLayer 103.5050     175.2600     180      
+J23        TopLayer 10.1600      27.0900      0        
+J20        TopLayer 10.1600      44.8700      0        
+J19        TopLayer 10.1600      80.4300      0        
+J15        TopLayer 10.1600      169.3300     0        
+J11        TopLayer 10.1600      115.9900     0        
+J7         TopLayer 119.1750     10.1600      0        
+J6         TopLayer 10.1600      98.2100      0        
+J4         TopLayer 79.8050      10.1600      0        
+C9         TopLayer 119.7700     26.0350      0        
+C8         TopLayer 116.6350     26.0350      0        
+C7         TopLayer 126.1600     20.9550      90       
+C6         TopLayer 122.9850     26.0350      0        
+C5         TopLayer 123.6200     15.8750      0        
+C3         TopLayer 82.9800      18.8190      0        
+C1         TopLayer 43.7750      18.4150      0        
+J14        TopLayer 149.8600     68.1600      180      
+J24        TopLayer 127.8500     58.4200      90       
+J5         TopLayer 10.1600      133.7700     0        
+J29        TopLayer 127.8500     153.6700     90       
+J28        TopLayer 32.1700      153.6700     270      
+J21        TopLayer 149.8600     151.3400     180      
+J27        TopLayer 32.1700      110.4900     270      
+J35        TopLayer 127.8500     130.8100     90       
+J18        TopLayer 149.8600     35.1400      180      
+J3         TopLayer 40.8450      10.1600      0        
+J25        TopLayer 127.8500     40.6400      90       
+J26        TopLayer 32.1700      45.7200      270      
+J16        TopLayer 10.1600      151.5500     0        
+J8         TopLayer 149.8600     117.6900     180      
+J33        TopLayer 32.1700      132.0800     270      
+J32        TopLayer 32.1700      88.9000      270      
+J12        TopLayer 10.1600      62.6500      0        
+J34        TopLayer 32.1700      67.3100      270      

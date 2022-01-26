@@ -1,0 +1,407 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body {
+			font-family : segoe ui;
+		}
+
+		td, th {
+			padding: 0.5em;
+			text-align : left;
+			width: 10em;
+		}
+		th {
+			background-color : #EEEEEE;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+			font-size: 0.9em;
+		}
+
+		.DRC_summary_header {
+			padding-bottom : 0.1em;
+			border : 0px solid black;
+			width: 100%;
+			align: left;
+		}
+
+		.DRC_summary_header_col1,
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3 {
+			color : black;
+			font-size:100%;
+			padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2em;
+			border : 0px solid black;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.DRC_summary_header_col1 {
+			font-weight: bold;
+			width: 8em;
+		}
+
+		.DRC_summary_header_col2 {
+			width: 0.1em;
+		
+		}
+
+		.DRC_summary_header_col3 {
+			width : auto;
+		}
+
+		.header_holder {
+		    Width = 100%;
+		    border = 0px solid green;
+		    padding = 0;
+		}
+
+
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 8em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD20\Templates\AD_logo.png
+		"><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td class="column1">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">12/8/2021</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">1:09:31 PM</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:01</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///C:\Users\Ryan\Google Drive (rvtran@ucsd.edu)\ECE 191\go-kart-real-time-controller\PCB\ertc_breakout_pcb_v1-1\ertc_breakout_pcb.PcbDoc" class="file"><acronym title="C:\Users\Ryan\Google Drive (rvtran@ucsd.edu)\ECE 191\go-kart-real-time-controller\PCB\ertc_breakout_pcb_v1-1\ertc_breakout_pcb.PcbDoc">C:\Users\Ryan\Google Drive (rvtran@ucsd.edu)\ECE 191\go-kart-real-time-controller\PCB\ertc_breakout_pcb_v1-1\ertc_breakout_pcb.PcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td class="column2">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3">0</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">29</td></tr>
+</table>
+</td>
+</table><a name="IDY5LEGJXKMX5LESFRCDHS4YLMIHOGSJZVIUHEHJFVMQF14LIH1SY"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDXWWUGRINNRC0EPT5F1VGQRYJBSMXAH1QASH4YPY4KLVC02R4VPN">Clearance Constraint (Gap=5mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDGJVKXRY5ZLYAE0QMBJ53AKKWBLAZVZDOPVQVCYIREI4K2NROEP">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDWOWTYGAO3IFWERBAITRKXIYMXCHLCDNJ5TY2AMBPQMSUWJ1BUESH">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID2WRSEJVSWPMCDRFBJO0MHTUUPSNFYPMBFKAIPENXSEJLZNH53NO">Modified Polygon (Allow modified: No), (Allow shelved: No)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDD0FAL53PBQLVOGHDQVGG0LIGSIPDWZ42P0Y4NMBNDAPXQ0BMDASP">Width Constraint (Min=5mil) (Max=30mil) (Preferred=10mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDTUJ4STMAUZNHHPK15XUONEYB1PWBF1ONBW4Y2BCPXSI4T1S33ELH">Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDKTH2Q5OJ2IQ5PPT4DL4S0LADILJPXN2AXICWUABU2544U5FJND1F">Hole To Hole Clearance (Gap=10mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDPSPXFSED3NS3B0301O1TTH0AUJM1AZGRJVR0WZDQAB0C1CD4CXNM">Minimum Solder Mask Sliver (Gap=10mil) (All),(All)</a></td>
+<td class="column2">28</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDZGWAHIMY4U1EBNDCFBB2MABRJOANRYAV003WTSELDEQTCJL31TLO">Net Antennae (Tolerance=0mil) (All)</a></td>
+<td class="column2">1</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID1ZMBREFK45H5LGUMXIEJCYOEGBJFJVNAWVOJN4C25JO4XSXUPUP">Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">29</td>
+</tr>
+</table><br><a name="IDPSPXFSED3NS3B0301O1TTH0AUJM1AZGRJVR0WZDQAB0C1CD4CXNM"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Minimum Solder Mask Sliver (Gap=10mil) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan\Google Drive (rvtran@ucsd.edu)\ECE 191\go-kart-real-time-controller\PCB\ertc_breakout_pcb_v1-1\ertc_breakout_pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2567.8mil|Location2.X=2579.05mil|Location1.Y=1495.69mil|Location2.Y=1506.94mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan\Google Drive (rvtran@ucsd.edu)\ECE 191\go-kart-real-time-controller\PCB\ertc_breakout_pcb_v1-1\ertc_breakout_pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2567.8mil|Location2.X=2579.05mil|Location1.Y=1495.69mil|Location2.Y=1506.94mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (9.717mil &lt; 10mil) Between Pad C1-1(1696.85mil,725mil) on Top Layer And Pad C1-2(1750mil,725mil) on Top Layer [Top Solder] Mask Sliver [9.717mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan\Google Drive (rvtran@ucsd.edu)\ECE 191\go-kart-real-time-controller\PCB\ertc_breakout_pcb_v1-1\ertc_breakout_pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1970.69mil|Location2.X=1981.94mil|Location1.Y=1519.375mil|Location2.Y=1530.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan\Google Drive (rvtran@ucsd.edu)\ECE 191\go-kart-real-time-controller\PCB\ertc_breakout_pcb_v1-1\ertc_breakout_pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1970.69mil|Location2.X=1981.94mil|Location1.Y=1519.375mil|Location2.Y=1530.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (9.715mil &lt; 10mil) Between Pad C2-1(1150mil,751.574mil) on Top Layer And Pad C2-2(1150mil,698.426mil) on Top Layer [Top Solder] Mask Sliver [9.715mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan\Google Drive (rvtran@ucsd.edu)\ECE 191\go-kart-real-time-controller\PCB\ertc_breakout_pcb_v1-1\ertc_breakout_pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4111.305mil|Location2.X=4122.555mil|Location1.Y=1511.596mil|Location2.Y=1522.846mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan\Google Drive (rvtran@ucsd.edu)\ECE 191\go-kart-real-time-controller\PCB\ertc_breakout_pcb_v1-1\ertc_breakout_pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4111.305mil|Location2.X=4122.555mil|Location1.Y=1511.596mil|Location2.Y=1522.846mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (9.715mil &lt; 10mil) Between Pad C3-1(3240.356mil,740.906mil) on Top Layer And Pad C3-2(3293.504mil,740.906mil) on Top Layer [Top Solder] Mask Sliver [9.715mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan\Google Drive (rvtran@ucsd.edu)\ECE 191\go-kart-real-time-controller\PCB\ertc_breakout_pcb_v1-1\ertc_breakout_pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3512.62mil|Location2.X=3523.87mil|Location1.Y=1535.281mil|Location2.Y=1546.531mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan\Google Drive (rvtran@ucsd.edu)\ECE 191\go-kart-real-time-controller\PCB\ertc_breakout_pcb_v1-1\ertc_breakout_pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3512.62mil|Location2.X=3523.87mil|Location1.Y=1535.281mil|Location2.Y=1546.531mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (9.715mil &lt; 10mil) Between Pad C4-1(2691.93mil,767.48mil) on Top Layer And Pad C4-2(2691.93mil,714.332mil) on Top Layer [Top Solder] Mask Sliver [9.715mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan\Google Drive (rvtran@ucsd.edu)\ECE 191\go-kart-real-time-controller\PCB\ertc_breakout_pcb_v1-1\ertc_breakout_pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5711.305mil|Location2.X=5722.555mil|Location1.Y=1395.69mil|Location2.Y=1406.94mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan\Google Drive (rvtran@ucsd.edu)\ECE 191\go-kart-real-time-controller\PCB\ertc_breakout_pcb_v1-1\ertc_breakout_pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5711.305mil|Location2.X=5722.555mil|Location1.Y=1395.69mil|Location2.Y=1406.94mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (9.715mil &lt; 10mil) Between Pad C5-1(4840.356mil,625mil) on Top Layer And Pad C5-2(4893.504mil,625mil) on Top Layer [Top Solder] Mask Sliver [9.715mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan\Google Drive (rvtran@ucsd.edu)\ECE 191\go-kart-real-time-controller\PCB\ertc_breakout_pcb_v1-1\ertc_breakout_pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5686.305mil|Location2.X=5697.555mil|Location1.Y=1795.69mil|Location2.Y=1806.94mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan\Google Drive (rvtran@ucsd.edu)\ECE 191\go-kart-real-time-controller\PCB\ertc_breakout_pcb_v1-1\ertc_breakout_pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5686.305mil|Location2.X=5697.555mil|Location1.Y=1795.69mil|Location2.Y=1806.94mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (9.715mil &lt; 10mil) Between Pad C6-1(4815.356mil,1025mil) on Top Layer And Pad C6-2(4868.504mil,1025mil) on Top Layer [Top Solder] Mask Sliver [9.715mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan\Google Drive (rvtran@ucsd.edu)\ECE 191\go-kart-real-time-controller\PCB\ertc_breakout_pcb_v1-1\ertc_breakout_pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5834.99mil|Location2.X=5846.24mil|Location1.Y=1619.375mil|Location2.Y=1630.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan\Google Drive (rvtran@ucsd.edu)\ECE 191\go-kart-real-time-controller\PCB\ertc_breakout_pcb_v1-1\ertc_breakout_pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5834.99mil|Location2.X=5846.24mil|Location1.Y=1619.375mil|Location2.Y=1630.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (9.715mil &lt; 10mil) Between Pad C7-1(4966.93mil,798.426mil) on Top Layer And Pad C7-2(4966.93mil,851.574mil) on Top Layer [Top Solder] Mask Sliver [9.715mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan\Google Drive (rvtran@ucsd.edu)\ECE 191\go-kart-real-time-controller\PCB\ertc_breakout_pcb_v1-1\ertc_breakout_pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5436.305mil|Location2.X=5447.555mil|Location1.Y=1795.69mil|Location2.Y=1806.94mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan\Google Drive (rvtran@ucsd.edu)\ECE 191\go-kart-real-time-controller\PCB\ertc_breakout_pcb_v1-1\ertc_breakout_pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5436.305mil|Location2.X=5447.555mil|Location1.Y=1795.69mil|Location2.Y=1806.94mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (9.715mil &lt; 10mil) Between Pad C8-1(4565.356mil,1025mil) on Top Layer And Pad C8-2(4618.504mil,1025mil) on Top Layer [Top Solder] Mask Sliver [9.715mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan\Google Drive (rvtran@ucsd.edu)\ECE 191\go-kart-real-time-controller\PCB\ertc_breakout_pcb_v1-1\ertc_breakout_pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5559.73mil|Location2.X=5570.98mil|Location1.Y=1795.69mil|Location2.Y=1806.94mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan\Google Drive (rvtran@ucsd.edu)\ECE 191\go-kart-real-time-controller\PCB\ertc_breakout_pcb_v1-1\ertc_breakout_pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5559.73mil|Location2.X=5570.98mil|Location1.Y=1795.69mil|Location2.Y=1806.94mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (9.717mil &lt; 10mil) Between Pad C9-1(4688.78mil,1025mil) on Top Layer And Pad C9-2(4741.93mil,1025mil) on Top Layer [Top Solder] Mask Sliver [9.717mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan\Google Drive (rvtran@ucsd.edu)\ECE 191\go-kart-real-time-controller\PCB\ertc_breakout_pcb_v1-1\ertc_breakout_pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5273.858mil|Location2.X=5285.108mil|Location1.Y=3064.03mil|Location2.Y=3075.28mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan\Google Drive (rvtran@ucsd.edu)\ECE 191\go-kart-real-time-controller\PCB\ertc_breakout_pcb_v1-1\ertc_breakout_pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5273.858mil|Location2.X=5285.108mil|Location1.Y=3064.03mil|Location2.Y=3075.28mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (8.143mil &lt; 10mil) Between Pad J2-62(4400mil,2250mil) on Multi-Layer And Via (4457mil,2288mil) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [8.143mil] / [Bottom Solder] Mask Sliver [8.143mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan\Google Drive (rvtran@ucsd.edu)\ECE 191\go-kart-real-time-controller\PCB\ertc_breakout_pcb_v1-1\ertc_breakout_pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5224.66mil|Location2.X=5235.91mil|Location1.Y=2818.435mil|Location2.Y=2829.685mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan\Google Drive (rvtran@ucsd.edu)\ECE 191\go-kart-real-time-controller\PCB\ertc_breakout_pcb_v1-1\ertc_breakout_pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5224.66mil|Location2.X=5235.91mil|Location1.Y=2818.435mil|Location2.Y=2829.685mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (2.439mil &lt; 10mil) Between Pad J2-66(4400mil,2050mil) on Multi-Layer And Via (4362mil,2000mil) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [2.439mil] / [Bottom Solder] Mask Sliver [2.439mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan\Google Drive (rvtran@ucsd.edu)\ECE 191\go-kart-real-time-controller\PCB\ertc_breakout_pcb_v1-1\ertc_breakout_pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5224.66mil|Location2.X=5235.91mil|Location1.Y=2770.315mil|Location2.Y=2781.565mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan\Google Drive (rvtran@ucsd.edu)\ECE 191\go-kart-real-time-controller\PCB\ertc_breakout_pcb_v1-1\ertc_breakout_pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5224.66mil|Location2.X=5235.91mil|Location1.Y=2770.315mil|Location2.Y=2781.565mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (2.439mil &lt; 10mil) Between Pad J2-68(4400mil,1950mil) on Multi-Layer And Via (4362mil,2000mil) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [2.439mil] / [Bottom Solder] Mask Sliver [2.439mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan\Google Drive (rvtran@ucsd.edu)\ECE 191\go-kart-real-time-controller\PCB\ertc_breakout_pcb_v1-1\ertc_breakout_pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4844.375mil|Location2.X=4855.625mil|Location1.Y=7971.674mil|Location2.Y=7982.924mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan\Google Drive (rvtran@ucsd.edu)\ECE 191\go-kart-real-time-controller\PCB\ertc_breakout_pcb_v1-1\ertc_breakout_pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4844.375mil|Location2.X=4855.625mil|Location1.Y=7971.674mil|Location2.Y=7982.924mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (9.715mil &lt; 10mil) Between Pad R10-1(3974.41mil,7200mil) on Top Layer And Pad R10-2(4025.59mil,7200mil) on Top Layer [Top Solder] Mask Sliver [9.715mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan\Google Drive (rvtran@ucsd.edu)\ECE 191\go-kart-real-time-controller\PCB\ertc_breakout_pcb_v1-1\ertc_breakout_pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5771.674mil|Location2.X=5782.924mil|Location1.Y=7894.375mil|Location2.Y=7905.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan\Google Drive (rvtran@ucsd.edu)\ECE 191\go-kart-real-time-controller\PCB\ertc_breakout_pcb_v1-1\ertc_breakout_pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5771.674mil|Location2.X=5782.924mil|Location1.Y=7894.375mil|Location2.Y=7905.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (9.715mil &lt; 10mil) Between Pad R11-1(4950mil,7125.59mil) on Top Layer And Pad R11-2(4950mil,7074.41mil) on Top Layer [Top Solder] Mask Sliver [9.715mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan\Google Drive (rvtran@ucsd.edu)\ECE 191\go-kart-real-time-controller\PCB\ertc_breakout_pcb_v1-1\ertc_breakout_pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2128.332mil|Location2.X=2139.582mil|Location1.Y=1769.375mil|Location2.Y=1780.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan\Google Drive (rvtran@ucsd.edu)\ECE 191\go-kart-real-time-controller\PCB\ertc_breakout_pcb_v1-1\ertc_breakout_pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2128.332mil|Location2.X=2139.582mil|Location1.Y=1769.375mil|Location2.Y=1780.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (9.914mil &lt; 10mil) Between Pad R1-2(1315.552mil,975mil) on Top Layer And Via (1250mil,975mil) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [9.914mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan\Google Drive (rvtran@ucsd.edu)\ECE 191\go-kart-real-time-controller\PCB\ertc_breakout_pcb_v1-1\ertc_breakout_pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6121.674mil|Location2.X=6132.924mil|Location1.Y=7894.375mil|Location2.Y=7905.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan\Google Drive (rvtran@ucsd.edu)\ECE 191\go-kart-real-time-controller\PCB\ertc_breakout_pcb_v1-1\ertc_breakout_pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6121.674mil|Location2.X=6132.924mil|Location1.Y=7894.375mil|Location2.Y=7905.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (9.715mil &lt; 10mil) Between Pad R12-1(5300mil,7125.59mil) on Top Layer And Pad R12-2(5300mil,7074.41mil) on Top Layer [Top Solder] Mask Sliver [9.715mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan\Google Drive (rvtran@ucsd.edu)\ECE 191\go-kart-real-time-controller\PCB\ertc_breakout_pcb_v1-1\ertc_breakout_pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5671.674mil|Location2.X=5682.924mil|Location1.Y=7894.375mil|Location2.Y=7905.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan\Google Drive (rvtran@ucsd.edu)\ECE 191\go-kart-real-time-controller\PCB\ertc_breakout_pcb_v1-1\ertc_breakout_pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5671.674mil|Location2.X=5682.924mil|Location1.Y=7894.375mil|Location2.Y=7905.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (9.715mil &lt; 10mil) Between Pad R13-1(4850mil,7125.59mil) on Top Layer And Pad R13-2(4850mil,7074.41mil) on Top Layer [Top Solder] Mask Sliver [9.715mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan\Google Drive (rvtran@ucsd.edu)\ECE 191\go-kart-real-time-controller\PCB\ertc_breakout_pcb_v1-1\ertc_breakout_pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6021.674mil|Location2.X=6032.924mil|Location1.Y=7894.375mil|Location2.Y=7905.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan\Google Drive (rvtran@ucsd.edu)\ECE 191\go-kart-real-time-controller\PCB\ertc_breakout_pcb_v1-1\ertc_breakout_pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6021.674mil|Location2.X=6032.924mil|Location1.Y=7894.375mil|Location2.Y=7905.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (9.715mil &lt; 10mil) Between Pad R14-1(5200mil,7125.59mil) on Top Layer And Pad R14-2(5200mil,7074.41mil) on Top Layer [Top Solder] Mask Sliver [9.715mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan\Google Drive (rvtran@ucsd.edu)\ECE 191\go-kart-real-time-controller\PCB\ertc_breakout_pcb_v1-1\ertc_breakout_pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5571.674mil|Location2.X=5582.924mil|Location1.Y=7894.375mil|Location2.Y=7905.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan\Google Drive (rvtran@ucsd.edu)\ECE 191\go-kart-real-time-controller\PCB\ertc_breakout_pcb_v1-1\ertc_breakout_pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5571.674mil|Location2.X=5582.924mil|Location1.Y=7894.375mil|Location2.Y=7905.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (9.715mil &lt; 10mil) Between Pad R15-1(4750mil,7125.59mil) on Top Layer And Pad R15-2(4750mil,7074.41mil) on Top Layer [Top Solder] Mask Sliver [9.715mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan\Google Drive (rvtran@ucsd.edu)\ECE 191\go-kart-real-time-controller\PCB\ertc_breakout_pcb_v1-1\ertc_breakout_pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2021.674mil|Location2.X=2032.924mil|Location1.Y=7894.375mil|Location2.Y=7905.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan\Google Drive (rvtran@ucsd.edu)\ECE 191\go-kart-real-time-controller\PCB\ertc_breakout_pcb_v1-1\ertc_breakout_pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2021.674mil|Location2.X=2032.924mil|Location1.Y=7894.375mil|Location2.Y=7905.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (9.715mil &lt; 10mil) Between Pad R16-1(1200mil,7125.59mil) on Top Layer And Pad R16-2(1200mil,7074.41mil) on Top Layer [Top Solder] Mask Sliver [9.715mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan\Google Drive (rvtran@ucsd.edu)\ECE 191\go-kart-real-time-controller\PCB\ertc_breakout_pcb_v1-1\ertc_breakout_pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2121.674mil|Location2.X=2132.924mil|Location1.Y=7894.375mil|Location2.Y=7905.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan\Google Drive (rvtran@ucsd.edu)\ECE 191\go-kart-real-time-controller\PCB\ertc_breakout_pcb_v1-1\ertc_breakout_pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2121.674mil|Location2.X=2132.924mil|Location1.Y=7894.375mil|Location2.Y=7905.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (9.715mil &lt; 10mil) Between Pad R17-1(1300mil,7125.59mil) on Top Layer And Pad R17-2(1300mil,7074.41mil) on Top Layer [Top Solder] Mask Sliver [9.715mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan\Google Drive (rvtran@ucsd.edu)\ECE 191\go-kart-real-time-controller\PCB\ertc_breakout_pcb_v1-1\ertc_breakout_pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2221.674mil|Location2.X=2232.924mil|Location1.Y=7894.375mil|Location2.Y=7905.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan\Google Drive (rvtran@ucsd.edu)\ECE 191\go-kart-real-time-controller\PCB\ertc_breakout_pcb_v1-1\ertc_breakout_pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2221.674mil|Location2.X=2232.924mil|Location1.Y=7894.375mil|Location2.Y=7905.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (9.715mil &lt; 10mil) Between Pad R18-1(1400mil,7125.59mil) on Top Layer And Pad R18-2(1400mil,7074.41mil) on Top Layer [Top Solder] Mask Sliver [9.715mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan\Google Drive (rvtran@ucsd.edu)\ECE 191\go-kart-real-time-controller\PCB\ertc_breakout_pcb_v1-1\ertc_breakout_pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2419.375mil|Location2.X=2430.625mil|Location1.Y=1546.674mil|Location2.Y=1557.924mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan\Google Drive (rvtran@ucsd.edu)\ECE 191\go-kart-real-time-controller\PCB\ertc_breakout_pcb_v1-1\ertc_breakout_pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2419.375mil|Location2.X=2430.625mil|Location1.Y=1546.674mil|Location2.Y=1557.924mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (9.715mil &lt; 10mil) Between Pad R2-1(1549.41mil,775mil) on Top Layer And Pad R2-2(1600.59mil,775mil) on Top Layer [Top Solder] Mask Sliver [9.715mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan\Google Drive (rvtran@ucsd.edu)\ECE 191\go-kart-real-time-controller\PCB\ertc_breakout_pcb_v1-1\ertc_breakout_pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2128.332mil|Location2.X=2139.582mil|Location1.Y=1869.375mil|Location2.Y=1880.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan\Google Drive (rvtran@ucsd.edu)\ECE 191\go-kart-real-time-controller\PCB\ertc_breakout_pcb_v1-1\ertc_breakout_pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2128.332mil|Location2.X=2139.582mil|Location1.Y=1869.375mil|Location2.Y=1880.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (9.914mil &lt; 10mil) Between Pad R3-1(1315.552mil,1075mil) on Top Layer And Via (1250mil,1075mil) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [9.914mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan\Google Drive (rvtran@ucsd.edu)\ECE 191\go-kart-real-time-controller\PCB\ertc_breakout_pcb_v1-1\ertc_breakout_pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2419.375mil|Location2.X=2430.625mil|Location1.Y=1492.076mil|Location2.Y=1503.326mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan\Google Drive (rvtran@ucsd.edu)\ECE 191\go-kart-real-time-controller\PCB\ertc_breakout_pcb_v1-1\ertc_breakout_pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2419.375mil|Location2.X=2430.625mil|Location1.Y=1492.076mil|Location2.Y=1503.326mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (9.715mil &lt; 10mil) Between Pad R4-1(1600.59mil,675mil) on Top Layer And Pad R4-2(1549.41mil,675mil) on Top Layer [Top Solder] Mask Sliver [9.715mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan\Google Drive (rvtran@ucsd.edu)\ECE 191\go-kart-real-time-controller\PCB\ertc_breakout_pcb_v1-1\ertc_breakout_pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3961.305mil|Location2.X=3972.555mil|Location1.Y=1562.58mil|Location2.Y=1573.83mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan\Google Drive (rvtran@ucsd.edu)\ECE 191\go-kart-real-time-controller\PCB\ertc_breakout_pcb_v1-1\ertc_breakout_pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3961.305mil|Location2.X=3972.555mil|Location1.Y=1562.58mil|Location2.Y=1573.83mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (9.715mil &lt; 10mil) Between Pad R6-1(3091.34mil,790.906mil) on Top Layer And Pad R6-2(3142.52mil,790.906mil) on Top Layer [Top Solder] Mask Sliver [9.715mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan\Google Drive (rvtran@ucsd.edu)\ECE 191\go-kart-real-time-controller\PCB\ertc_breakout_pcb_v1-1\ertc_breakout_pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3961.305mil|Location2.X=3972.555mil|Location1.Y=1507.982mil|Location2.Y=1519.232mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan\Google Drive (rvtran@ucsd.edu)\ECE 191\go-kart-real-time-controller\PCB\ertc_breakout_pcb_v1-1\ertc_breakout_pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3961.305mil|Location2.X=3972.555mil|Location1.Y=1507.982mil|Location2.Y=1519.232mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (9.715mil &lt; 10mil) Between Pad R8-1(3142.52mil,690.906mil) on Top Layer And Pad R8-2(3091.34mil,690.906mil) on Top Layer [Top Solder] Mask Sliver [9.715mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan\Google Drive (rvtran@ucsd.edu)\ECE 191\go-kart-real-time-controller\PCB\ertc_breakout_pcb_v1-1\ertc_breakout_pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6221.674mil|Location2.X=6232.924mil|Location1.Y=7894.375mil|Location2.Y=7905.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan\Google Drive (rvtran@ucsd.edu)\ECE 191\go-kart-real-time-controller\PCB\ertc_breakout_pcb_v1-1\ertc_breakout_pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6221.674mil|Location2.X=6232.924mil|Location1.Y=7894.375mil|Location2.Y=7905.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (9.715mil &lt; 10mil) Between Pad R9-1(5400mil,7125.59mil) on Top Layer And Pad R9-2(5400mil,7074.41mil) on Top Layer [Top Solder] Mask Sliver [9.715mil]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDZGWAHIMY4U1EBNDCFBB2MABRJOANRYAV003WTSELDEQTCJL31TLO"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Net Antennae (Tolerance=0mil) (All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan\Google Drive (rvtran@ucsd.edu)\ECE 191\go-kart-real-time-controller\PCB\ertc_breakout_pcb_v1-1\ertc_breakout_pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1511.5mil|Location2.X=1535.089mil|Location1.Y=6521.5mil|Location2.Y=6555.699mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan\Google Drive (rvtran@ucsd.edu)\ECE 191\go-kart-real-time-controller\PCB\ertc_breakout_pcb_v1-1\ertc_breakout_pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1511.5mil|Location2.X=1535.089mil|Location1.Y=6521.5mil|Location2.Y=6555.699mil|Absolute=True">Net Antennae: Track (400mil,6000mil)(670mil,5730mil) on Int2 </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>
