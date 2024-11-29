@@ -627,15 +627,53 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
+[Document35]
+DocumentPath=..\..\..\..\..\Downloads\LD09S24A4GV00LF\AltiumDesigner\LD09S24A4GV00LF.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document36]
+DocumentPath=..\..\..\..\..\Downloads\LD09S24A4GV00LF\AltiumDesigner\LD09S24A4GV00LF.SchLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
 [GeneratedDocument1]
-DocumentPath=Project Outputs for RTC_Breakout_SP24\NC Drill\RTC_Breakout_SP24.DRR
+DocumentPath=Project Outputs for RTC_Breakout_SP24\Design Rule Check - RTC_Breakout_SP24.html
 DItemRevisionGUID=
 
 [GeneratedDocument2]
-DocumentPath=Project Outputs for RTC_Breakout_SP24\NC Drill\RTC_Breakout_SP24.LDP
+DocumentPath=Project Outputs for RTC_Breakout_SP24\NC Drill\RTC_Breakout_SP24.DRR
 DItemRevisionGUID=
 
 [GeneratedDocument3]
+DocumentPath=Project Outputs for RTC_Breakout_SP24\NC Drill\RTC_Breakout_SP24.LDP
+DItemRevisionGUID=
+
+[GeneratedDocument4]
 DocumentPath=Project Outputs for RTC_Breakout_SP24\NC Drill\RTC_Breakout_SP24.TXT
 DItemRevisionGUID=
 
