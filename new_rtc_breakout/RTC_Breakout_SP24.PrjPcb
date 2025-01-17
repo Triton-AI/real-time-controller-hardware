@@ -523,7 +523,7 @@ ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=WRRRKCTL
 
 [Document29]
 DocumentPath=..\..\..\..\..\Music\5023520210.SchLib
@@ -557,7 +557,7 @@ ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=ANEBRQEM
 
 [Document31]
 DocumentPath=..\..\..\..\..\Music\5023520610.SchLib
@@ -591,7 +591,7 @@ ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=CIFVXIXK
 
 [Document33]
 DocumentPath=..\..\..\..\..\Music\5023521000.SchLib
@@ -642,7 +642,7 @@ ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=BKPRSGLC
 
 [Document36]
 DocumentPath=..\..\..\..\..\3D Objects\MFU0805FF00500P500.SchLib
@@ -676,7 +676,7 @@ ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=WSRBDUXY
 
 [Document38]
 DocumentPath=..\..\..\..\..\3D Objects\MFU0805FF00800P100.SchLib
@@ -710,7 +710,7 @@ ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=QYYCYIDI
 
 [Document40]
 DocumentPath=..\..\..\..\..\3D Objects\MFU0805FF01500P100.SchLib
@@ -761,10 +761,27 @@ ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=SYPYXYGJ
 
 [Document43]
 DocumentPath=..\..\..\..\..\Music\5600200220.SchLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document44]
+DocumentPath=RTC_Breakout_SP24.BomDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -1124,6 +1141,22 @@ OutputDocumentPath1=
 OutputVariantName1=[No Variations]
 OutputDefault1=0
 PageOptions1=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=Letter|PaperIndex=1
+Configuration1_Name1=ColumnNameFormat
+Configuration1_Item1=CaptionAsName
+Configuration1_Name2=ForceUpdateSettings
+Configuration1_Item2=False
+Configuration1_Name3=General
+Configuration1_Item3=OpenExported=True|AddToProject=False|ReportBOMViolationsInMessages=False|ForceFit=False|NotFitted=False|Database=False|DatabasePriority=False|IncludePcbData=False|IncludeVaultData=False|IncludeCloudData=False|IncludeDocumentData=False|IncludeAlternatives=True|ShowExportOptions=True|TemplateFilename=|TemplateVaultGuid=|TemplateItemGuid=|TemplateRevisionGuid=|BatchMode=5|FormWidth=1200|FormHeight=710|SupplierProdQty=1|SupplierAutoQty=True|SupplierUseCachedPricing=False|SupplierCurrency=USD|SolutionsPerItem=1|SuppliersPerSolution=1|ViewType=0|BomSetName=
+Configuration1_Name4=GroupOrder
+Configuration1_Item4=
+Configuration1_Name5=VisibleOrder
+Configuration1_Item5=Line #=52|Comment=122|Description=100|Designator=100|Revision ID=76|Revision State=103|Revision Status=94|Quantity=64|Manufacturer 1=97|Manufacturer Part Number 1=161|Manufacturer Lifecycle 1=141|Supplier 1=72|Supplier Part Number 1=136|Supplier Unit Price 1=121|Supplier Subtotal 1=115
+Configuration1_Name6=VisibleOrder_Base
+Configuration1_Item6=Line #=52|Comment=122|Description=100|Designator=100|Revision ID=76|Revision State=103|Revision Status=94|Quantity=64|Manufacturer 1=97|Manufacturer Part Number 1=161|Manufacturer Lifecycle 1=141|Supplier 1=72|Supplier Part Number 1=136|Supplier Unit Price 1=121|Supplier Subtotal 1=115
+Configuration1_Name7=VisibleOrder_Consolidated
+Configuration1_Item7=Line #=100|Comment=100|Description=100|Designator=100|Revision ID=100|Revision State=100|Revision Status=100|Quantity=100|Manufacturer 1=97|Manufacturer Part Number 1=161|Manufacturer Lifecycle 1=141|Supplier 1=72|Supplier Part Number 1=136|Supplier Unit Price 1=121|Supplier Subtotal 1=115
+Configuration1_Name8=VisibleOrder_Flat
+Configuration1_Item8=Line #=100|Comment=100|Description=100|Designator=100|Revision ID=100|Revision State=100|Revision Status=100|Manufacturer 1=97|Manufacturer Part Number 1=161|Manufacturer Lifecycle 1=141|Supplier 1=72|Supplier Part Number 1=136|Supplier Unit Price 1=121|Supplier Subtotal 1=115
 OutputType2=BOM_ReportCompare
 OutputName2=BOM Compare
 OutputDocumentPath2=
@@ -1452,6 +1485,7 @@ Type147=1
 Type148=1
 Type149=1
 Type150=1
+Type151=1
 
 [Difference Levels]
 Type1=1
@@ -1535,6 +1569,7 @@ Type78=1
 Type79=1
 Type80=1
 Type81=1
+Type82=1
 
 [Electrical Rules Check]
 Type1=1
@@ -1691,6 +1726,13 @@ Type151=2
 Type152=1
 Type153=1
 Type154=0
+Type155=0
+Type156=0
+Type157=0
+Type158=0
+Type159=0
+Type160=0
+Type161=0
 
 [ERC Connection Matrix]
 L1=NNNNNNNNNNNWNNNWW
@@ -2141,6 +2183,47 @@ SelectedOnly=0
 UpdateVariants=1
 UpdateToLatestRevision=1
 PartTypes=0
+
+[NetInfos]
+Net1=NetName=3.3V_IO|NetColor=$000099FF
+Net2=NetName=5V_IO|NetColor=$000099FF
+Net3=NetName=EXT_3.3V|NetColor=clRed
+Net4=NetName=EXT_5V|NetColor=clRed
+Net5=NetName=EXT_7V-12V|NetColor=clRed
+Net6=NetName=FDCAN1_RX|NetColor=clFuchsia
+Net7=NetName=FDCAN1_TX|NetColor=clFuchsia
+Net8=NetName=FDCAN2_RX|NetColor=clFuchsia
+Net9=NetName=FDCAN2_TX|NetColor=clFuchsia
+Net10=NetName=PA0|NetColor=$00000098
+Net11=NetName=PA2|NetColor=$00000098
+Net12=NetName=PA3|NetColor=$00000098
+Net13=NetName=PA4|NetColor=clLime
+Net14=NetName=PA5|NetColor=clLime
+Net15=NetName=PA6|NetColor=$00000098
+Net16=NetName=PA7|NetColor=$00000098
+Net17=NetName=PB1|NetColor=$00000098
+Net18=NetName=PC4|NetColor=$00000098
+Net19=NetName=PC5|NetColor=$00000098
+Net20=NetName=PD10|NetColor=$001D7638
+Net21=NetName=PD11|NetColor=$001D7638
+Net22=NetName=PD12|NetColor=$001D7638
+Net23=NetName=PD14|NetColor=$001D7638
+Net24=NetName=PD15|NetColor=$001D7638
+Net25=NetName=PE11|NetColor=$001D7638
+Net26=NetName=PE12|NetColor=$001D7638
+Net27=NetName=PE13|NetColor=$001D7638
+Net28=NetName=PE14|NetColor=$001D7638
+Net29=NetName=PE15|NetColor=$001D7638
+Net30=NetName=PF11|NetColor=$00000098
+Net31=NetName=PF12|NetColor=$00000098
+Net32=NetName=UART4_RX|NetColor=clBlue
+Net33=NetName=UART4_TX|NetColor=clBlue
+Net34=NetName=UART5_RX|NetColor=clBlue
+Net35=NetName=UART5_TX|NetColor=clBlue
+Net36=NetName=UART7_RX|NetColor=clBlue
+Net37=NetName=UART7_TX|NetColor=clBlue
+Net38=NetName=UART9_RX|NetColor=clBlue
+Net39=NetName=UART9_TX|NetColor=clBlue
 
 [Comparison Options]
 ComparisonOptions0=Kind=Net|MinPercent=75|MinMatch=3|ShowMatch=0|UseName=-1|InclAllRules=0
