@@ -1,0 +1,24 @@
+Output: Gerber Files
+Type  : Gerber
+From  : Variant [[No Variations]] of PCB Document [RTC_Breakout_SP24.PcbDoc]
+   Generated File[RTC_Breakout_SP24.GTO]
+   Generated File[RTC_Breakout_SP24.GTP]
+   Generated File[RTC_Breakout_SP24.GTS]
+   Generated File[RTC_Breakout_SP24.GTL]
+   Generated File[RTC_Breakout_SP24.GP1]
+   Generated File[RTC_Breakout_SP24.GP2]
+   Generated File[RTC_Breakout_SP24.G1]
+   Generated File[RTC_Breakout_SP24.GP3]
+   Generated File[RTC_Breakout_SP24.GBL]
+   Generated File[RTC_Breakout_SP24.GBS]
+   Generated File[RTC_Breakout_SP24.GBP]
+   Generated File[RTC_Breakout_SP24.GBO]
+   Generated File[RTC_Breakout_SP24.GM]
+   Generated File[RTC_Breakout_SP24.EXTREP]
+   Generated File[RTC_Breakout_SP24.REP]
+
+
+Files Generated   : 15
+Documents Printed : 0
+
+Finished Output Generation At 9:39:53 PM On 1/23/2025

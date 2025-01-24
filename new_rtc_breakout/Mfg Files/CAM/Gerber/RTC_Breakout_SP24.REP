@@ -1,0 +1,283 @@
+*************************************************************
+FileName = RTC_Breakout_SP24.GBR
+AutoAperture = True
+*************************************************************
+Generating : Bottom Overlay
+      File : RTC_Breakout_SP24.GBO
+
+    Adding Layer      : Bottom Overlay
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Top Paste
+      File : RTC_Breakout_SP24.GTP
+
+    Adding Layer      : Top Paste
+
+    Adding Layer      : SIG TOP
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D16
+    D17
+    D18
+    D19
+    D20
+    D21
+    D22
+    D23
+    D24
+    D25
+    D26
+    D27
+    D28
+    D29
+    D30
+    D31
+*************************************************************
+
+*************************************************************
+Generating : Top Overlay
+      File : RTC_Breakout_SP24.GTO
+
+    Adding Layer      : Top Overlay
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+    D13
+    D14
+    D15
+*************************************************************
+
+*************************************************************
+Generating : PWR3
+      File : RTC_Breakout_SP24.GP2
+
+    Adding Layer      : PWR3
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D54
+    D61
+    D67
+    D68
+    D69
+    D70
+    D71
+    D72
+    D73
+*************************************************************
+
+*************************************************************
+Generating : Top Solder
+      File : RTC_Breakout_SP24.GTS
+
+    Adding Layer      : Top Solder
+
+    Adding Layer      : SIG TOP
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D23
+    D24
+    D25
+    D28
+    D32
+    D33
+    D34
+    D35
+    D36
+    D37
+    D38
+    D39
+    D40
+    D41
+    D42
+    D43
+    D44
+    D45
+    D46
+    D47
+    D48
+    D49
+    D50
+    D51
+*************************************************************
+
+*************************************************************
+Generating : GND2
+      File : RTC_Breakout_SP24.GP1
+
+    Adding Layer      : GND2
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D67
+    D68
+    D69
+    D70
+    D71
+*************************************************************
+
+*************************************************************
+Generating : SIG BOT
+      File : RTC_Breakout_SP24.GBL
+
+    Adding Layer      : SIG BOT
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D14
+    D58
+    D59
+    D60
+    D61
+    D63
+    D64
+    D65
+    D66
+*************************************************************
+
+*************************************************************
+Generating : GND5
+      File : RTC_Breakout_SP24.GP3
+
+    Adding Layer      : GND5
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D67
+    D68
+    D69
+    D70
+    D71
+*************************************************************
+
+*************************************************************
+Generating : SIG4
+      File : RTC_Breakout_SP24.G1
+
+    Adding Layer      : SIG4
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D14
+    D53
+    D58
+    D59
+    D60
+    D61
+    D63
+    D65
+    D66
+*************************************************************
+
+*************************************************************
+Generating : Bottom Paste
+      File : RTC_Breakout_SP24.GBP
+
+    Adding Layer      : Bottom Paste
+
+    Adding Layer      : SIG BOT
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : SIG TOP
+      File : RTC_Breakout_SP24.GTL
+
+    Adding Layer      : SIG TOP
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D13
+    D14
+    D17
+    D18
+    D19
+    D20
+    D21
+    D22
+    D23
+    D24
+    D25
+    D26
+    D27
+    D28
+    D29
+    D30
+    D31
+    D52
+    D53
+    D54
+    D55
+    D56
+    D57
+    D58
+    D59
+    D60
+    D61
+    D62
+    D63
+    D64
+    D65
+    D66
+*************************************************************
+
+*************************************************************
+Generating : Bottom Solder
+      File : RTC_Breakout_SP24.GBS
+
+    Adding Layer      : Bottom Solder
+
+    Adding Layer      : SIG BOT
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D44
+    D45
+    D46
+    D47
+    D49
+    D50
+    D51
+    D74
+*************************************************************
+
+*************************************************************
+Generating : Profile
+      File : RTC_Breakout_SP24.GM
+
+
+Used DCodes :
+    D75
+*************************************************************
+

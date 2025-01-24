@@ -101,23 +101,6 @@ GenerateClassCluster=0
 DocumentUniqueId=CRXBBYFP
 
 [Document4]
-DocumentPath=..\..\..\Pictures\Job1.OutJob
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=0
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=
-
-[Document5]
 DocumentPath=PCB Libraries\ertc_footprints.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -134,7 +117,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=RRGUFGRK
 
-[Document6]
+[Document5]
 DocumentPath=PCB Libraries\PHOENIX_1725656.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -151,7 +134,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document7]
+[Document6]
 DocumentPath=PCB Libraries\PHOENIX_1725669.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -168,7 +151,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document8]
+[Document7]
 DocumentPath=PCB Libraries\SAMTEC_SSW-135-21-G-D.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -185,7 +168,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=CBSXYRUM
 
-[Document9]
+[Document8]
 DocumentPath=Schematic Libraries\1725656.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -202,7 +185,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document10]
+[Document9]
 DocumentPath=Schematic Libraries\1725669.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -219,7 +202,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document11]
+[Document10]
 DocumentPath=Schematic Libraries\ertc_breakout_pcb.SCHLIB
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -236,7 +219,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document12]
+[Document11]
 DocumentPath=Schematic Libraries\ertc_symbols.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -253,7 +236,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=WCWYOJNW
 
-[Document13]
+[Document12]
 DocumentPath=Schematic Libraries\SSW-135-21-G-D.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -270,7 +253,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=CJZDDOUY
 
-[Document14]
+[Document13]
 DocumentPath=..\..\..\Music\RTC\10posduraclik\AltiumDesigner\5023521000.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -287,7 +270,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=WBBOJTKK
 
-[Document15]
+[Document14]
 DocumentPath=..\..\..\Music\RTC\6posduraclik\AltiumDesigner\5023520610.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -304,7 +287,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document16]
+[Document15]
 DocumentPath=..\..\..\Music\RTC\CUS_13TB\AltiumDesigner\CUS-13TB.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -321,7 +304,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document17]
+[Document16]
 DocumentPath=..\..\..\Music\RTC\2posduraclik\AltiumDesigner\5023520210.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -338,7 +321,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document18]
+[Document17]
 DocumentPath=..\..\..\3D Objects\(800mA Fuse) MFU0805FF00800P100\AltiumDesigner\MFU0805FF00800P100.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -355,7 +338,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=WATKDXZZ
 
-[Document19]
+[Document18]
 DocumentPath=..\..\..\3D Objects\(500mA Fuse) MFU0805FF00500P500\AltiumDesigner\MFU0805FF00500P500.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -372,7 +355,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document20]
+[Document19]
 DocumentPath=..\..\..\3D Objects\(1.5A Fuse) MFU0805FF01500P100\AltiumDesigner\MFU0805FF01500P100.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -389,7 +372,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document21]
+[Document20]
 DocumentPath=..\..\..\3D Objects\MAX3232ECDR\MAX3232ECDR\MAX3232ECDR.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -406,7 +389,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=VAJDTXZY
 
-[Document22]
+[Document21]
 DocumentPath=..\..\..\Downloads\5600200220\AltiumDesigner\5600200220.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -423,7 +406,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document23]
+[Document22]
 DocumentPath=I-O Connectors.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -440,7 +423,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=EWZOMJFC
 
-[Document24]
+[Document23]
 DocumentPath=..\..\..\..\..\Downloads\SMF12CA\AltiumDesigner\SMF12CA.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -457,7 +440,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=UMBYONLF
 
-[Document25]
+[Document24]
 DocumentPath=..\..\..\..\..\Downloads\SMF12CA\AltiumDesigner\SMF12CA.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -474,7 +457,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document26]
+[Document25]
 DocumentPath=..\..\..\..\..\Downloads\LD09S24A4GV00LF\AltiumDesigner\LD09S24A4GV00LF.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -491,7 +474,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=EHGXRXLG
 
-[Document27]
+[Document26]
 DocumentPath=..\..\..\..\..\Downloads\LD09S24A4GV00LF\AltiumDesigner\LD09S24A4GV00LF.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -508,7 +491,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=HIXMYROK
 
-[Document28]
+[Document27]
 DocumentPath=..\..\..\..\..\Music\5023520210.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -525,7 +508,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=WRRRKCTL
 
-[Document29]
+[Document28]
 DocumentPath=..\..\..\..\..\Music\5023520210.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -542,7 +525,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document30]
+[Document29]
 DocumentPath=..\..\..\..\..\Music\5023520610.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -559,7 +542,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=ANEBRQEM
 
-[Document31]
+[Document30]
 DocumentPath=..\..\..\..\..\Music\5023520610.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -576,7 +559,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document32]
+[Document31]
 DocumentPath=..\..\..\..\..\Music\5023521000.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -593,7 +576,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=CIFVXIXK
 
-[Document33]
+[Document32]
 DocumentPath=..\..\..\..\..\Music\5023521000.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -610,7 +593,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document34]
+[Document33]
 DocumentPath=..\..\..\..\..\3D Objects\MAX3232ECDR.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -627,7 +610,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document35]
+[Document34]
 DocumentPath=..\..\..\..\..\3D Objects\MFU0805FF00500P500.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -644,7 +627,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=BKPRSGLC
 
-[Document36]
+[Document35]
 DocumentPath=..\..\..\..\..\3D Objects\MFU0805FF00500P500.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -661,7 +644,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document37]
+[Document36]
 DocumentPath=..\..\..\..\..\3D Objects\MFU0805FF00800P100.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -678,7 +661,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=WSRBDUXY
 
-[Document38]
+[Document37]
 DocumentPath=..\..\..\..\..\3D Objects\MFU0805FF00800P100.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -695,7 +678,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document39]
+[Document38]
 DocumentPath=..\..\..\..\..\3D Objects\MFU0805FF01500P100.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -712,7 +695,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=QYYCYIDI
 
-[Document40]
+[Document39]
 DocumentPath=..\..\..\..\..\3D Objects\MFU0805FF01500P100.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -729,7 +712,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document41]
+[Document40]
 DocumentPath=..\..\..\..\..\3D Objects\SOIC127P600X175-16N.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -746,7 +729,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=NAFBHDEE
 
-[Document42]
+[Document41]
 DocumentPath=..\..\..\..\..\Music\5600200220.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -763,7 +746,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=SYPYXYGJ
 
-[Document43]
+[Document42]
 DocumentPath=..\..\..\..\..\Music\5600200220.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -780,7 +763,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document44]
+[Document43]
 DocumentPath=RTC_Breakout_SP24.BomDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -797,7 +780,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document45]
+[Document44]
 DocumentPath=..\..\..\..\..\Downloads\5600200320\AltiumDesigner\5600200320.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -812,9 +795,9 @@ ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=EFBVJKCO
 
-[Document46]
+[Document45]
 DocumentPath=..\..\..\..\..\Downloads\5600200320\AltiumDesigner\5600200320.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -831,8 +814,42 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document47]
+[Document46]
 DocumentPath=..\..\..\..\..\Downloads\XT30UPB-M\XT30UPB-M.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=TVYFDGFY
+
+[Document47]
+DocumentPath=..\..\..\..\..\Downloads\XT30UPB-M\XT30UPB-M.SchLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=SEOYWFKP
+
+[Document48]
+DocumentPath=..\..\..\..\..\Downloads\BC859C_215\AltiumDesigner\BC859C,215.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -848,8 +865,25 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document48]
-DocumentPath=..\..\..\..\..\Downloads\XT30UPB-M\XT30UPB-M.SchLib
+[Document49]
+DocumentPath=..\..\..\..\..\Downloads\BC859C_215\AltiumDesigner\BC859C,215.SchLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document50]
+DocumentPath=Job1.OutJob
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -870,14 +904,86 @@ DocumentPath=Project Outputs for RTC_Breakout_SP24\Design Rule Check - RTC_Break
 DItemRevisionGUID=
 
 [GeneratedDocument2]
-DocumentPath=Project Outputs for RTC_Breakout_SP24\NC Drill\RTC_Breakout_SP24.DRR
+DocumentPath=Mfg Files\CAM\NC Drill\RTC_Breakout_SP24.DRR
 DItemRevisionGUID=
 
 [GeneratedDocument3]
-DocumentPath=Project Outputs for RTC_Breakout_SP24\NC Drill\RTC_Breakout_SP24.LDP
+DocumentPath=Project Outputs for RTC_Breakout_SP24\NC Drill\RTC_Breakout_SP24.DRR
 DItemRevisionGUID=
 
 [GeneratedDocument4]
+DocumentPath=Mfg Files\CAM\Gerber\RTC_Breakout_SP24.EXTREP
+DItemRevisionGUID=
+
+[GeneratedDocument5]
+DocumentPath=Mfg Files\CAM\Gerber\RTC_Breakout_SP24.G1
+DItemRevisionGUID=
+
+[GeneratedDocument6]
+DocumentPath=Mfg Files\CAM\Gerber\RTC_Breakout_SP24.GBL
+DItemRevisionGUID=
+
+[GeneratedDocument7]
+DocumentPath=Mfg Files\CAM\Gerber\RTC_Breakout_SP24.GBO
+DItemRevisionGUID=
+
+[GeneratedDocument8]
+DocumentPath=Mfg Files\CAM\Gerber\RTC_Breakout_SP24.GBP
+DItemRevisionGUID=
+
+[GeneratedDocument9]
+DocumentPath=Mfg Files\CAM\Gerber\RTC_Breakout_SP24.GBS
+DItemRevisionGUID=
+
+[GeneratedDocument10]
+DocumentPath=Mfg Files\CAM\Gerber\RTC_Breakout_SP24.GM
+DItemRevisionGUID=
+
+[GeneratedDocument11]
+DocumentPath=Mfg Files\CAM\Gerber\RTC_Breakout_SP24.GP1
+DItemRevisionGUID=
+
+[GeneratedDocument12]
+DocumentPath=Mfg Files\CAM\Gerber\RTC_Breakout_SP24.GP2
+DItemRevisionGUID=
+
+[GeneratedDocument13]
+DocumentPath=Mfg Files\CAM\Gerber\RTC_Breakout_SP24.GP3
+DItemRevisionGUID=
+
+[GeneratedDocument14]
+DocumentPath=Mfg Files\CAM\Gerber\RTC_Breakout_SP24.GTL
+DItemRevisionGUID=
+
+[GeneratedDocument15]
+DocumentPath=Mfg Files\CAM\Gerber\RTC_Breakout_SP24.GTO
+DItemRevisionGUID=
+
+[GeneratedDocument16]
+DocumentPath=Mfg Files\CAM\Gerber\RTC_Breakout_SP24.GTP
+DItemRevisionGUID=
+
+[GeneratedDocument17]
+DocumentPath=Mfg Files\CAM\Gerber\RTC_Breakout_SP24.GTS
+DItemRevisionGUID=
+
+[GeneratedDocument18]
+DocumentPath=Mfg Files\CAM\NC Drill\RTC_Breakout_SP24.LDP
+DItemRevisionGUID=
+
+[GeneratedDocument19]
+DocumentPath=Project Outputs for RTC_Breakout_SP24\NC Drill\RTC_Breakout_SP24.LDP
+DItemRevisionGUID=
+
+[GeneratedDocument20]
+DocumentPath=Mfg Files\CAM\Gerber\RTC_Breakout_SP24.REP
+DItemRevisionGUID=
+
+[GeneratedDocument21]
+DocumentPath=Mfg Files\CAM\NC Drill\RTC_Breakout_SP24.TXT
+DItemRevisionGUID=
+
+[GeneratedDocument22]
 DocumentPath=Project Outputs for RTC_Breakout_SP24\NC Drill\RTC_Breakout_SP24.TXT
 DItemRevisionGUID=
 
