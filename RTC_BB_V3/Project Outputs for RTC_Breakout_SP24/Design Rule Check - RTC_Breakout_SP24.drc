@@ -1,0 +1,95 @@
+Protel Design System Design Rule Check
+PCB File : C:\Users\Frank Chaqueco\Documents\GitHub\real-time-controller-hardware\real-time-controller-hardware\new_rtc_breakout\RTC_Breakout_SP24.PcbDoc
+Date     : 1/23/2025
+Time     : 10:01:31 PM
+
+Processing Rule : Clearance Constraint (Gap=5mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+Rule Violations :0
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+   Violation between Un-Routed Net Constraint: Via (1115mil,1855mil) from SIG TOP to SIG BOT Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Via (1125mil,4420mil) from SIG TOP to SIG BOT Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Via (120mil,565mil) from SIG TOP to SIG BOT Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Via (1217.581mil,741.759mil) from SIG TOP to SIG BOT Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Via (1225mil,1075mil) from SIG TOP to SIG BOT Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Via (1280mil,5285mil) from SIG TOP to SIG BOT Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Via (1349.927mil,134.936mil) from SIG TOP to SIG BOT Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Via (1530mil,3140mil) from SIG TOP to SIG BOT Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Via (1551.354mil,6013.86mil) from SIG TOP to SIG BOT Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Via (155mil,2630mil) from SIG TOP to SIG BOT Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Via (1805mil,2210mil) from SIG TOP to SIG BOT Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Via (1855mil,2970mil) from SIG TOP to SIG BOT Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Via (2085mil,970mil) from SIG TOP to SIG BOT Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Via (2180mil,130mil) from SIG TOP to SIG BOT Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Via (2255mil,750mil) from SIG TOP to SIG BOT Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Via (2290mil,5560mil) from SIG TOP to SIG BOT Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Via (2390mil,4985mil) from SIG TOP to SIG BOT Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Via (2455mil,4240mil) from SIG TOP to SIG BOT Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Via (2600mil,3115mil) from SIG TOP to SIG BOT Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Via (2825mil,135mil) from SIG TOP to SIG BOT Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Via (2940mil,1935mil) from SIG TOP to SIG BOT Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Via (2970mil,990mil) from SIG TOP to SIG BOT Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Via (3005mil,2280mil) from SIG TOP to SIG BOT Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Via (3120mil,4965mil) from SIG TOP to SIG BOT Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Via (3175mil,4580mil) from SIG TOP to SIG BOT Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Via (3180mil,765mil) from SIG TOP to SIG BOT Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Via (3230mil,3505mil) from SIG TOP to SIG BOT Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Via (3250mil,6045mil) from SIG TOP to SIG BOT Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Via (3290mil,1685mil) from SIG TOP to SIG BOT Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Via (3595mil,140mil) from SIG TOP to SIG BOT Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Via (3691.26mil,5482.6mil) from SIG TOP to SIG BOT Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Via (430mil,2770mil) from SIG TOP to SIG BOT Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Via (4310mil,130mil) from SIG TOP to SIG BOT Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Via (4530mil,1775mil) from SIG TOP to SIG BOT Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Via (4595mil,660mil) from SIG TOP to SIG BOT Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Via (4750mil,1395mil) from SIG TOP to SIG BOT Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Via (4855mil,725mil) from SIG TOP to SIG BOT Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Via (490mil,700mil) from SIG TOP to SIG BOT Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Via (520mil,1785mil) from SIG TOP to SIG BOT Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Via (645mil,135mil) from SIG TOP to SIG BOT Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Via (95mil,1855mil) from SIG TOP to SIG BOT Dead Copper - Net Not Assigned.
+Rule Violations :41
+
+Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=6mil) (Max=100mil) (Preferred=7mil) (All)
+Rule Violations :0
+
+Processing Rule : Routing Topology Rule(Topology=Shortest) (All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Direct Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=1mil) (Max=250mil) (All)
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=10mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=10mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Silk To Solder Mask (Clearance=5mil) (IsPad),(All)
+Rule Violations :0
+
+Processing Rule : Silk to Silk (Clearance=10mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Net Antennae (Tolerance=0mil) (All)
+Rule Violations :0
+
+Processing Rule : Board Clearance Constraint (Gap=0mil) (All)
+Rule Violations :0
+
+Processing Rule : Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)
+Rule Violations :0
+
+
+Violations Detected : 41
+Waived Violations : 0
+Time Elapsed        : 00:00:01
